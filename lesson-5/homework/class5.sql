@@ -153,6 +153,9 @@ Select * from Employees
 where Age < 25 or Salary > 60000
 --13. Use IF statement to update the salary of an employee based on their department, increase by 10% if they work in 
 --'HR' or EmployeeID = 5
+UPDATE Employees
+SET Salary = Salary * 1.10  -- Increase by 10%
+WHERE Department = 'HR' OR EmployeeID = 5;
 --14.Use INTERSECT to show products that are common between Products and Products_Discounted tables
 
 SELECT ProductID, ProductName, Price FROM Products
